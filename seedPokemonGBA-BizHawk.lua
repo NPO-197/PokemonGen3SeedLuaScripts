@@ -7,38 +7,38 @@ TextColor = 0xffa00000
 
 --Depending on the Version the RNG is stored in a different location,
 --Set the variable Version based on this list...
--- Game							Region	Seed address
---1	Ruby/Sapphire			USA			0x03004818
---2 Ruby/Sapphire			PAL			0x03004828
---3 Ruby/Sapphire			JPN			0x03004748
+-- Game			Region			Seed address
+--1 Ruby/Sapphire	USA			0x03004818
+--2 Ruby/Sapphire	PAL			0x03004828
+--3 Ruby/Sapphire	JPN			0x03004748
 --4 FireRed/LeafGreen	USA			0x03005000
 --5 FireRed/LeafGreen	PAL			0x03004F50
 --6 FireRed/LeafGreen	JPN			0x03005040
---7 Emerald						USA			0x03005D80
---8 Emerald						PAL			0x03005D80
---9 Emerald						JPN			0x03005AE0
+--7 Emerald		USA			0x03005D80
+--8 Emerald		PAL			0x03005D80
+--9 Emerald		JPN			0x03005AE0
 
 Version = 1
 
 GameVersionList={"Ruby/Sapphire USA",
-								"Ruby/Sapphire PAL",
-								"Ruby/Sapphire JPN",
-								"FireRed/LeafGreen USA",
-								"FireRed/LeafGreen PAL",
-								"FireRed/LeafGreen JPN",
-								"Emerald USA",
-								"Emerald PAL",
-								"Emerald JPN"}
+		"Ruby/Sapphire PAL",
+		"Ruby/Sapphire JPN",
+		"FireRed/LeafGreen USA",
+		"FireRed/LeafGreen PAL",
+		"FireRed/LeafGreen JPN",
+		"Emerald USA",
+		"Emerald PAL",
+		"Emerald JPN"}
 SeedAddressList={0x03004818,
-						0x03004828,
-						0x03004748,
-						0x03005000,
-						0x03004F50,
-						0x03005040,
-						0x03005D80,
-						0x03005D80,
-						0x03005D80,
-						0x03005AE0}
+		0x03004828,
+		0x03004748,
+		0x03005000,
+		0x03004F50,
+		0x03005040,
+		0x03005D80,
+		0x03005D80,
+		0x03005D80,
+		0x03005AE0}
 
 SeedAddress = SeedAddressList[Version]
 VersionString = GameVersionList[Version]
