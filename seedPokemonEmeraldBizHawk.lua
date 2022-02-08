@@ -1,4 +1,8 @@
 
+--Original Code from Admiral-Fish's 3rd gen rng bot.lua
+--Modified to display RNG Seed / Distance by NPO-197
+
+--Color is in AARRGGBB format
 ColorRed = 0xffa00000
 
 rshift = bit.rshift

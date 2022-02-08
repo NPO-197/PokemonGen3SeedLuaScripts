@@ -1,5 +1,8 @@
+--Original Code from Admiral-Fish's 3rd gen rng bot.lua
+--Modified to display RNG Seed / Distance by NPO-197
 
-ColorRed = 0xffa00000
+--color is in RRGGBBAA format, default is blue
+TextColor = 0x0000a0ff
 
 rshift = bit.rshift
 lshift = bit.lshift
@@ -37,8 +40,8 @@ end
 
 while true do
 	seed = memory.readlong(0x03005D80);
-	gui.text( 0, 116, "RNG: "..string.format("%08X", seed))
-  gui.text( 0, 132, "Seed:"..string.format("%08X", validationSeed(seed)))
-	gui.text( 0, 148, "Dist:"..Distance(seed))
+	gui.text( 0, 116, "RNG: "..string.format("%08X", seed),TextColor)
+  gui.text( 0, 132, "Seed:"..string.format("%08X", validationSeed(seed)),TextColor)
+	gui.text( 0, 148, "Dist:"..Distance(seed),TextColor)
 	vba.frameadvance();
 end
